@@ -1,8 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 body { font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-nav { background-color: #ffffff; display: flex; justify-content: space-evenly; align-items: center; padding: 10px 20px; }
+nav { background-color: #ffffff; display: flex; justify-content: space-evenly; align-items: center; padding: 10px 20px; flex-wrap: wrap; }
 nav img { width: auto; height: 50px; }
 nav ul { list-style: none; display: flex; gap: 20px; }
 nav ul li { padding: 10px 15px; }
@@ -10,19 +9,16 @@ nav ul li:hover { background-color: #242424; color: #ffffff; border-radius: 10px
 nav button { background-color: #25D366; color: white; border: none; border-radius: 8px; padding: 10px 15px; cursor: pointer; width: 140px; }
 nav button:hover { background-color: #242424; color: #ffffff; }
 
-main { display: flex; flex-direction: column; align-items: center; justify-content: center;  background-color: #f0f0f0; }
-.hero {background-position:center; background-size:cover; background-image: url('https://houseofit.ph/wp-content/themes/houseofit/assets/img/top-bg.webp');display:flex; justify-content:center ;align-items:flex-start; width:100%;min-height:auto;padding:5% 8%;gap:2rem; height: auto;}
+main { display: flex; flex-direction: column; align-items: center; justify-content: center;  background-color: #f0f0f0; flex-wrap: wrap; }
+.hero {background-position:center; background-size:cover; background-image: url('https://houseofit.ph/wp-content/themes/houseofit/assets/img/top-bg.webp');display:flex; justify-content:center ;align-items:flex-start; width:100%;min-height:auto;padding:5% 8%;gap:2rem; height: auto; flex-wrap: wrap;}
 .banner-main {flex:1;max-width:550px;padding:20px;}
-
 .main-title { font-size: 55px; font-weight: bold; margin-bottom: 10px; color: #ffffff; }
 .main-description {font-family:'Poppins', sans-serif; font-size: 18px; color: #ffffff; margin-bottom: 20px; }
 .learn-more { cursor:pointer; font-weight:bold; background-color: #18bee3; padding: 10px; width: 180px; height: 73px; font-size: 18px; border-radius: 10px; border: none; color: #ffffff; }
-
 .vertical-btns {margin-left: 10px; display: flex; flex-direction: column; gap: 10px;  }
 .vertical-btns a {font-weight: bold; position: relative; align-content: center; background-color: transparent; color: white; border-radius: 10px; border: 1px solid #ffb501; padding: 10px; text-decoration: none; text-align: left; width: 269px;height:70px ; }
 .vertical-btns a:hover { background-color: #ffb501; color: black; }
 .button-container{display: flex; position:relative;  }
-
 .banner-right {margin-top:75px; flex:1;max-width:500px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;}
 .quote-title{background-color: #18bee3; padding: 10px; color:white; border-radius:20px 20px 0px 0px ;}
 .quote-bg {background: linear-gradient(90deg,rgba(37, 34, 34, 1) 0%, rgba(16, 17, 17, 1) 100%);  position: relative; bottom: 10px;  background-color: #141212; width: 475px; height: 500px; padding: 10px; border-radius: 0px 0px 20px 20px;}
@@ -34,36 +30,34 @@ main { display: flex; flex-direction: column; align-items: center; justify-conte
 .quote-form textarea { height: 120px; resize: none; }
 .quote-form button {font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;font-size: 16px; height: 50px; width: 450px; background-color: #18bee3; color: #000000; border: none; border-radius: 12px; padding: 10px 15px; cursor: pointer; }
 
-.support{ width:100%; height: 430px; background-color: #f0f0f0; padding: 20px;}
-.row{ display: flex; justify-content: center; margin-top: -45px; transform: translate(0,-10%);}
+.support{ width:100%; height: 430px; background-color: #f0f0f0; padding: 20px; }
+.row{ display: flex; justify-content: center; margin-top: -45px; transform: translate(0,-10%); flex-wrap: wrap;}
 .column1{max-width:500px;flex:1; margin:10px;  }
 .column1 h2{font-size: 24px; font-weight: bold; margin-bottom: 10px; background-color: #18bee3; padding: 10px; color:white; border-radius:20px 20px 0px 0px ;}
 .help-bg{position: relative; bottom:10px; background-color: #111111; padding: 3px; border-radius: 0px 0px 20px 20px;}
 .help-bg p{font-family: 'Poppins', sans-serif; font-size: 14px; color: #ffffff; margin-bottom: 10px;}
 .help-bg h3{font-family: 'Poppins', sans-serif; font-size: 18px; color: #ffffff; margin-bottom: 5px;}
 .design,.implement,.manage{margin:10px; border-radius: 10px; padding: 10px; border-bottom: 1px solid #222; background-color: #18bee3;}
-
 .column2{max-width:555px;flex:1;border-radius:20px; padding:15px; transform: translate(1%) ;margin-bottom:20px;margin:10px; background: linear-gradient(90deg,rgba(34, 33, 35, 1) 0%, rgba(19, 18, 19, 1) 100%); }
 .column2 h3{width: 555px; height: auto; font-size: 29px; color:#19bfe3}
 .column2 h4{font-size: 20px; color: #ffb501; margin-bottom: 10px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight:450}
 .column2 p{ color:white; font-size: 18px; font-family: 'Poppins', sans-serif; margin-bottom: 10px; }
 .column2 button{float:right; font-size:18px; font-weight:bold; background-color: #ffb501; width:190px; height:70px; border:none; border-radius:12px; cursor:pointer; }
 
-.about-us{width: 100%; height: 920px; display: flex; justify-content: center; }
-.about-us-content{display: flex; justify-content: center; align-items: center; padding: 20px; transform: translate(-50%);}
-.about-img{width: 919px; height: 537px; position:relative; transform: translate(15%);}
+.about-us{width: 100%; height: auto; min-height: 900px; display: flex; justify-content: center; }
+.about-us-content{display: flex;flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px; transform: translate(-50%); flex-direction: column; margin-bottom:70px;}
+.about-img{width: 100%; height: 537px; position:relative; transform: translate(15%); flex:1 1 500px;}
 .square{position:absolute; width: 100px; height: 100px; background-color: #000000; border-radius: 20px; top:0; transform: translate(-70%,-50%); }
 .description{justify-content:flex-start; flex-direction:column; display: flex; flex:1; float: left;width:365px; max-width: 400px; max-height: 1000px; background-color:#00bee4; padding: 20px; border-radius: 20px; flex:1; position: relative; transform: translate(28%,8%); }
 .description h1{font-size: 41px; font-weight: bold; margin-bottom: 10px; color: #ffffff; margin-top: 50px; margin-left: 15px;}
 .description p{font-size: 18px; color:white; margin: 15px}
 .description button{transform:translate(65%,0%);text-align: left; padding:10px;  font-size: 18px; font-weight: bold; background-color: #ffb501; color: #000000; border: none; border-radius: 12px; cursor: pointer; width: 190px; height: 70px; }
 
-.map{width: 100%; height:auto; min-height:1150px; padding-top:200px; display: flex;  background-color: #1a1a1a; justify-content: center; align-items: center; }
-.snake{transform: translate(30%,17.5%);}
-.map-container{ min-width:461px; max-width: 461px; height: 300px; transform: translate(-120%, -130%); background-color:#101010; padding:20px; border-radius: 20px; }
+.map{  width: 100%; height:auto; min-height:1150px; padding-top:200px; display: flex;  background-color: #1a1a1a; justify-content: center; align-items: center; position: relative; }
+.snake{ width: 100%; height: auto; max-width: 900px; position: relative; flex:1; right: 2%; }
+.map-container{ width: 461px; height: 300px; background-color:#101010; padding:20px; border-radius: 20px; position: absolute; top: 1%; left: 60%; z-index: 1; }
 .map-container h2{text-align:center; width: auto; padding:10px; font-size: 18px; color: #ffffff; margin-bottom: 10px; background-color: #00bce2; border-radius: 20px;}
 .map-container p{text-align:center; font-size: 16px; color: #ffffff; margin-bottom: 10px;}
-
 .first-circle,.second-circle,.third-circle,.fourth-circle,.fifth-circle,.sixth-circle{ position:absolute; width: 120px; height: 120px; border: 15px solid #00bce2; border-radius: 50%; background-color: #101010; box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);}
 .first-circle  { transform: translate(30%, -170%); }
 .second-circle { transform: translate(190%, -130%); }
@@ -71,15 +65,14 @@ main { display: flex; flex-direction: column; align-items: center; justify-conte
 .fourth-circle { transform: translate(500%, -20%); }
 .fifth-circle  { transform: translate(700%, 120%); }
 .sixth-circle  { transform: translate(900%, 170%); }
-.phone{width: 350px; height: 350px;   transform: translate(-260%, 85%); }
-
+.phone{width: 350px; height: 350px;   transform: translate(-280%, 85%); }
 
 .slide-logo{width: 100%; height:190px; display:flex; justify-content: center; align-items: center; background-color: #ffffff; }
 .logo-container{margin: 50px; padding:20px; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; }
 
 .feedbacks{width: 100%; height: auto; background-color: white; display: flex; justify-content: center;}
 .feedback-container h1{width:100%; text-align: center; padding: 20px; font-size: 41px; color: #333333;}
-.containers{ display: flex;  justify-content: space-between; align-items: center;}
+.containers{ display: flex;  justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; padding: 20px;}
 .customer-container{  box-shadow: 5px 5px 15px rgba(0,0,0,0.3); margin:15px;  width: 500px; height: 350px;display:flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;}
 .customer-container h3{ margin-bottom: 20px;}
 .customer-head{position:relative; display:flex;flex-direction: column;}
@@ -87,41 +80,38 @@ main { display: flex; flex-direction: column; align-items: center; justify-conte
 .customer-img img{width: 80px; height: 80px; border-radius: 50%; }
 .customer-head h2{font-size: 18px; font-weight: bold; color: #333333;  text-align: center;}
 .customer-head h6{font-size: 12px; font-weight: normal; color: #666666;  text-align: center; margin-bottom: 10px;}
-
 .customer-body{font-size: 14px; color: #1f1f1f; text-align: left;}
 
 .infrastructure{background-color:#f9f9f9;width:100%; height:auto; display: flex; justify-content:center; align-items: center; padding: 50px 20px; }
-.infrastructure-container{margin-top: 20px; float:left; width:750px; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background-color: #fffff2; border:1px solid #00bee4; border-radius: 10px; box-shadow:0 0 100px 0 rgba(0,0,0,39%) ;}
+.infrastructure-container{margin-top: 20px; float:left; width:750px; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
 .infrastructure-container h1{padding:10px; font-size: 41px; font-weight: bold; color: #333333; margin-bottom: 10px; }
 .infrastructure-container li{margin:40px; list-style: url('images/icons8-arrow-10.png'); font-size: 18px; color: #333333; text-align: left; margin-bottom: 10px; }
 
-.reasons-to-choose{ width: 100%; background-size: cover; background-position: center; height: 664px;background-image: url("https://houseofit.ph/wp-content/themes/houseofit/assets/img/reason-bg.webp"); padding: 50px 20px;}
-.reasons-container{transform: translateX(60%);  width:585px; height: 505px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: start;}
+.reasons-to-choose{ width: 100%;  background-size: cover; background-position: center; height: 664px;background-image: url("https://houseofit.ph/wp-content/themes/houseofit/assets/img/reason-bg.webp"); padding: 50px 20px;}
+.reasons-container{  width:100%; height: 505px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items:center; padding: 20px; }
 .reasons-container h1{font-size: 41px; font-weight: bold; color: #fff; text-align: left; margin-bottom: 20px; position: relative; right:20px}
 .reasons-container li{font-size: 18px; color: #fff; text-align: left; margin-bottom: 20px; }
 .reasons-container button{transform: translate(-10%, 40%); text-align: left; margin-top: 20px; padding: 10px; font-size: 18px; font-weight: bold; color: #000000; background-color: #ffb501; border: none; border-radius: 12px; cursor: pointer; width: 190px; height:70px}
 
 .contacts{width: 100%; height: auto; background-image: url('https://houseofit.ph/wp-content/themes/houseofit/assets/img/top-bg.webp'); background-size: cover; background-position: center;}
-.branches{display: flex; justify-content: center; align-items: center; padding: 20px; }
+.branches{display: flex; justify-content: center; align-items: center; padding: 20px; flex-wrap: wrap; gap: 20px; }
 .branches-container{ width:220px; height:270px; margin: 10px; padding: 30px; background-color: #181818; border: 1px solid #00bee4; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
 .branches-container h2{font-size: 20px; font-weight: bold; color: #00bee4; margin-bottom: 10px; text-align: left;}
 .branches-container h5{font-size: 16px; color: #ffffff; margin-bottom: 10px; text-align: left; font-weight: lighter;}
 .branches-container h6{ font-size: 16px; color: #ffb400; margin-bottom: 10px; text-align: left;}
 
-.more-contacts{display: flex; width: 100%;   padding: 20px; justify-content: center; margin-top: 40px;}
+.more-contacts{display: flex; width: 100%;   padding: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap; gap: 20px;}
 .col1{width: 390px; height:auto;display: flex;flex-direction: column; margin: 50px;}
 .houseofitlogo{width: 200px; height: auto; margin-bottom: 20px;}
 .goodfirms{width: 70px; height: 70px; margin: 10px;}
 .col1 p{margin-bottom: 10px; font-size: 14px; color: #fff; text-align: left;}
 .col1 ul{list-style: none; padding: 0; margin: 0; display: flex;  flex-direction: row; gap: 10px; }
 .col1 ul li{ width: 50px; height:50px; background-color:#00bee4; border-radius: 10px;}
-
 .col2 { width: 390px; display: flex; justify-content: center; margin: 50px; }
 .num-ul { list-style: none; margin: 0; padding: 0; max-width: 500px; }
 .num-ul li { padding: 10px 0; font-size: 18px; }
 .country { color: #fff; font-weight: 400; margin-right: 15px; float: left;}
 .phone { color: #00f0ff; font-weight: 400; margin-left: 10px;}
-
 .col3{width: 390px; }
 .col3 h4{font-weight:bold; color: #fff; margin-bottom: 10px; font-size:24px;}
 .services-list{list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
@@ -129,3 +119,6 @@ main { display: flex; flex-direction: column; align-items: center; justify-conte
 
 
 .footer-content { text-align: center; padding: 20px 0;  color: #fff; }
+
+
+
